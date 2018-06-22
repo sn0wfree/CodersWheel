@@ -4,6 +4,7 @@ import calendar
 import time
 import pandas as pd
 
+
 class GetDate(object):
     def __init__(self):
         pass
@@ -78,6 +79,7 @@ class GetDate(object):
 
         return datetimes + pd.tseries.offsets.DateOffset(months=month)
 
+
 class HandleDate(object):
     """
     This class provides the date relative the api service and handle some date
@@ -113,7 +115,8 @@ class HandleDate(object):
         return datetime.datetime.strptime(strs, fmt)
 
     def Handle_Str2TimeStamp(self, strs, fmt='%Y-%m-%d'):
-        import datetime,time
+        import datetime
+        import time
         a = datetime.datetime.strptime(strs, fmt).timetuple()
         return int(time.mktime(a))
 
@@ -155,6 +158,7 @@ class HandleDate(object):
 
 class WheelAboutDate(HandleDate, GetDate):
     pass
+
 
 if __name__ == '__main__':
     WAD = WheelAboutDate()

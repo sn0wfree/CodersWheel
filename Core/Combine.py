@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# # Copyright by sn0wfree 2018
+# Copyright by sn0wfree 2018
 # ----------------------------
 
 import inspect
@@ -12,7 +12,8 @@ def get_current_function_name():
 class MyClass(object):
 
     def function_one(self):
-        print "%s.%s invoked" % (self.__class__.__name__, self.get_current_function_name())
+        print "%s.%s invoked" % (
+            self.__class__.__name__, self.get_current_function_name())
 
     def get_current_function_name(self):
 

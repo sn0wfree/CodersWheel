@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 
+
 class CoroutineWheel(object):
     def __init__(self):
         self.Coroutine = self.Coroutine_core
@@ -10,23 +11,23 @@ class CoroutineWheel(object):
         status = "init"
         return status, args, kwargs
 
-    def Processor(self, core, *args,**kwargs):
+    def Processor(self, core, *args, **kwargs):
         # -----Processor----------
 
-        argss=None
+        argss = None
         status = 'processed'
         return status, argss
 
-    def StatusBar(self,status,*args,**kwargs):
+    def StatusBar(self, status, *args, **kwargs):
         pass
 
     def Breaktrigger(self, situation):
         # -----Break Detector------
         return 'End'
 
-    def Coroutine_core(self, *args,**kwargs):
+    def Coroutine_core(self, *args, **kwargs):
         # ---- init-----
-        status, args, kwargs = self.Initialization(*args,**kwargs)
+        status, args, kwargs = self.Initialization(*args, **kwargs)
         # ---- init----- Done
         while 1:
             core = yield status

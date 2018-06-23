@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 from collections import OrderedDict
+from functools import wraps
 import time
 try:
     import cPickle as pickle
@@ -223,6 +224,7 @@ def Lcache(capacity=250):
     memo = LastUpdatedOrderedDict(capacity)
 
     def cache(func):
+        @wraps(func)
         def _wrapper(*args):
             res = memo.get(args, None)
             if res is not None:

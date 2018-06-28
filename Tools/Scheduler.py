@@ -4,6 +4,7 @@ import apscheduler
 
 def Task():
     import time
+    print(id)
     print(time.time())
 
 
@@ -28,7 +29,7 @@ def ThreadingScheduler(task, parameter=(), sleeptime=10):
 
 class SchedScheduler(object):
     def __init__(self):
-        import sched,time
+        import sched, time
         # initial the class of scheduler in the sched  moudle
         self.scheduler = sched.scheduler(time.time, time.sleep)
 
@@ -57,12 +58,14 @@ class ScheduleSchedulerBase(object):
         threading.Thread(target=self.task).start()
 
     def SetDown(self):
-        self.schedule.every().day.at("9:00").do(self.job)
+        self.schedule.every(10).seconds.do(self.job)
         return self
 
     def run(self):
+        import time
         while True:
             self.schedule.run_pending()
+            time.sleep(1)
 
 
 class ScheduleScheduler(ScheduleSchedulerBase):

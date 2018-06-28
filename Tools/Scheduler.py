@@ -28,7 +28,7 @@ def ThreadingScheduler(task, parameter=(), sleeptime=10):
 
 class SchedScheduler(object):
     def __init__(self):
-        import sched
+        import sched,time
         # initial the class of scheduler in the sched  moudle
         self.scheduler = sched.scheduler(time.time, time.sleep)
 

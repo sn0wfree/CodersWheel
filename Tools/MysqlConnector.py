@@ -6,8 +6,7 @@ import sqlite3
 
 class ConnectMysql(object):
     # C_RR_ResearchReport
-    def __init__(self, MysqlName, host='192.168.0.210', port=3306, user='develop', passwd='sd61131707', charset='UTF8',
-                 db='com_stable'):
+    def __init__(self, MysqlName, host, port, user, passwd, charset,db):
         # super(LRUDict_UnPickled, self).__init__()
         from collections import namedtuple
         SQLConnector = namedtuple(MysqlName, ['host', 'port', 'user', 'passwd', 'charset', 'db'])

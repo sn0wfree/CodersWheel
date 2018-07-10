@@ -4,6 +4,12 @@
 import pandas as pd
 import sqlite3
 
+def QuickConnectSqlite2DF(sql,sqlitename):
+    import sqlite3
+    with sqlite3.connect(sqlitename) as conn:
+        df=pd.read_sql(sql,conn)
+    return df
+
 
 class SqliteDB(object):
 

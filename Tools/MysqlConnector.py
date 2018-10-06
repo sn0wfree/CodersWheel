@@ -4,6 +4,7 @@ import pymysql
 import sqlalchemy
 import sqlite3
 
+
 class ConnectMysql(object):
     # C_RR_ResearchReport
     def __init__(self, MysqlName, host='192.168.0.210', port=3306, user='develop', passwd='sd61131707', charset='UTF8',
@@ -20,7 +21,7 @@ class ConnectMysql(object):
         conn.close()
         return df
 
-    def DetectConnectStatus(self, returnresult=True,printout=False):
+    def DetectConnectStatus(self, returnresult=True, printout=False):
 
         try:
             result = self.Excutesql()
@@ -99,7 +100,8 @@ class ConnectMysql(object):
         with sqlite3.connect(sqlitefile) as conn:
             try:
                 sql = 'select * from {}  '.format(sqlitetable)
-                self.DF2mysql(pd.read_sql(sql, conn), sqlitetable, engine='SelfEngine', if_exists=if_exists, index=index)
+                self.DF2mysql(pd.read_sql(sql, conn), sqlitetable, engine='SelfEngine', if_exists=if_exists,
+                              index=index)
                 transported.append(sqlitetable)
             except (pd.io.sql.DatabaseError, sqlite3.DatabaseError) as e:
                 print(e)
@@ -120,16 +122,19 @@ class ConnectMysql(object):
                     # input special dateframe
                     self.Sqlite2MysqlSingleSameTable(sqlitefile, sqlitetable, if_exists='replace', index=False)
             else:
-                raise ValueError('sqlitetable obtain unsupported type input. sqlitetable only support str but obtain: {}'.format(type(sqlitetable)))
+                raise ValueError(
+                    'sqlitetable obtain unsupported type input. sqlitetable only support str but obtain: {}'.format(
+                        type(sqlitetable)))
         elif method == 'OtherTable' and isinstance(mysqltable, str):
             if isinstance(mysqltable, dict):
                 with sqlite3.connect(sqlitefile) as conn:
                     tables = pd.read_sql('select tbl_name from sqlite_master where type="table"  ', conn)
-                    transported =[]
+                    transported = []
                     for key in mysqltable.keys():
                         if key in tables.values.ravel():
                             sql = 'select * from {}  '.format(key)
-                            self.DF2mysql(pd.read_sql(sql, conn), mysqltable[key], engine='SelfEngine', if_exists=if_exists,
+                            self.DF2mysql(pd.read_sql(sql, conn), mysqltable[key], engine='SelfEngine',
+                                          if_exists=if_exists,
                                           index=index)
                             transported.append(key)
                         else:
@@ -138,7 +143,9 @@ class ConnectMysql(object):
                     self.TransportResult(transported)
 
             else:
-                raise ValueError("Unexpect parameter: mysqltable with value {}. Dict required but get: {} ".format(mysqltable,type(mysqltable)))
+                raise ValueError(
+                    "Unexpect parameter: mysqltable with value {}. Dict required but get: {} ".format(mysqltable,
+                                                                                                      type(mysqltable)))
 
     def getRRviaDB(self, name, table, limit=30, db=None, filtername=None):
         # type: (str, str, int, str) -> DataFrame
@@ -172,7 +179,7 @@ class ConnectMysql(object):
                         """ % (db, table, filtername, name)
 
         return self.sql2data(sql)
-    
-    
+
+
 if __name__ == '__main__':
     pass

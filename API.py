@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 # # Copyright by sn0wfree 2018
 # ----------------------------
-
+from Core.Core import Core
+from ServiceWheel.Service import Service
+from OtherToolWheel.Tools import Tools
 
 __Version__ = '0.1'
 __Author__ = 'sn0wfree'
@@ -11,11 +13,12 @@ __Description__ = 'It is a extra collections of Tools, \
 
 
 class API(object):
+    """
+    api main function
+    """
 
     def __init__(self):
-        from Core.Core import Core
-        from Service.Service import Service
-        from Tools.Tools import Tools
+
         self._Core_ = Core()
         self._Service_ = Service()
         self._Tools_ = Tools()

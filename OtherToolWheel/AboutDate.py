@@ -6,6 +6,7 @@ import pandas as pd
 
 
 class GetDate(object):
+
     def __init__(self):
         pass
 

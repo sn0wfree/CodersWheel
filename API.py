@@ -4,6 +4,7 @@
 from Core.Core import Core
 from ServiceWheel.Service import Service
 from OtherToolWheel.Tools import Tools
+from ConnectorWheel import DB
 
 __Version__ = '0.1'
 __Author__ = 'sn0wfree'
@@ -22,6 +23,7 @@ class API(object):
         self._Core_ = Core()
         self._Service_ = Service()
         self._Tools_ = Tools()
+
         pass
 
 

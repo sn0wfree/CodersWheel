@@ -56,7 +56,7 @@ class AsyncMysql(object):
                 await cur.execute(sql)
                 sql_result = await cur.fetchall()
                 col = list(map(lambda x: x[0], cur.description))
-                print(time.time(), sql_result)
+                # print(time.time(), sql_result)
                 return sql, col, sql_result
 
     @classmethod
@@ -75,6 +75,7 @@ class AsyncMysql(object):
         res = chain(*list(map(lambda x: x._result, res[0])))
         if to_df:
             res = ((sql, col, pd.DataFrame(list(data), columns=col)) for sql, col, data in res)
+            # res : (sql, col, data)
             if merge:
                 return pd.concat(map(lambda x: x[-1], res))
             else:
@@ -89,6 +90,7 @@ class AsyncMysql(object):
     def main_query(cls, mysqlpara, sqlset, chunksize=100, to_df=False, merge=False):
         """
         the main function of query executing function with async coroutine version
+
         :param mysqlpara:  mysql parameter
         :param sqlset:  a set or a list of sql
         :param chunksize:  chunk size of group
@@ -106,9 +108,14 @@ class AsyncMysql(object):
         s = loop.run_until_complete(
             asyncio.wait([cls.cur_execute(loop, mysqlpara, sql) for sql in cls.chunks(sqlset, chunksize)]))
 
-        result = cls.parse_result(s, to_df=to_df, merge=merge)
+        res = cls.parse_result(s, to_df=to_df, merge=merge)
         loop.close()
-        return result
+        return res
+
+    @classmethod
+    def mysql_conn_main_query(cls, MysqlConn_V004, sqlset, chunksize=100, to_df=False, merge=False):
+        mysqlpara = MysqlConn_V004._para
+        return cls.main_query(cls, mysqlpara, sqlset, chunksize=chunksize, to_df=to_df, merge=merge)
 
 
 if __name__ == '__main__':

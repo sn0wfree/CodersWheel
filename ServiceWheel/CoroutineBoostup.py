@@ -5,7 +5,7 @@ class CoroutineWheel(object):
     def __init__(self):
         self.Coroutine = self.Coroutine_core
 
-    def Initialization(self, *args, **kwargs):
+    def initialization(self, *args, **kwargs):
         # ---- init-----
         print('---- init-----')
         status = "init"
@@ -27,7 +27,7 @@ class CoroutineWheel(object):
 
     def Coroutine_core(self, *args, **kwargs):
         # ---- init-----
-        status, args, kwargs = self.Initialization(*args, **kwargs)
+        status, args, kwargs = self.initialization(*args, **kwargs)
         # ---- init----- Done
         while 1:
             core = yield status

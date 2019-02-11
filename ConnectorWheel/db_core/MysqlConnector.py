@@ -37,44 +37,43 @@ class BaseMysql(object):
         :param db:
         """
 
-        SQLConnector = namedtuple(mysql_name, ['host', 'port',
+        SQLConnector = namedtuple(mysql_name, ['host',
+                                               'port',
                                                'user',
                                                'passwd',
                                                'charset',
                                                'db'])
         self._para = SQLConnector(host, port, user, passwd, charset, db)
 
+    def _SelfConnect(self):
+        """
+        create the connector for the mysql sql command.
+        :param self:
+        :return:
+        """
 
-def _SelfConnect(self):
-    """
-    create the connector for the mysql sql command.
-    :param self:
-    :return:
-    """
+        return pymysql.connect(host=self._para.host,
+                               port=self._para.port,
+                               user=self._para.user,
+                               passwd=self._para.passwd,
+                               charset=self._para.charset,
+                               db=self._para.db)
 
-    return pymysql.connect(host=self._para.host,
-                           port=self._para.port,
-                           user=self._para.user,
-                           passwd=self._para.passwd,
-                           charset=self._para.charset,
-                           db=self._para.db)
+    def _SelfEngine(self):
+        """
+        create the cursor for the mysql sql command.
+        :return:
+        """
+        engine_str = 'mysql+pymysql://{}:{}@{}:{}/{}?charset={}'
 
+        # use sqlalchemy to create engine
 
-def _SelfEngine(self):
-    """
-    create the cursor for the msyql sql command.
-    :return:
-    """
-    engine_str = 'mysql+pymysql://{}:{}@{}:{}/{}?charset={}'
-
-    # use sqlalchemy to create engine
-
-    return sqlalchemy.create_engine(engine_str.format(self._para.user,
-                                                      self._para.passwd,
-                                                      self._para.host,
-                                                      self._para.port,
-                                                      self._para.db,
-                                                      self._para.charset))
+        return sqlalchemy.create_engine(engine_str.format(self._para.user,
+                                                          self._para.passwd,
+                                                          self._para.host,
+                                                          self._para.port,
+                                                          self._para.db,
+                                                          self._para.charset))
 
 
 class ConnectMysql(BaseMysql):
@@ -93,6 +92,7 @@ class ConnectMysql(BaseMysql):
         :return:
         """
         # type: (str) -> dataframe
+
         conn = self.SelfConnect()
         df = pd.read_sql(sql, conn)
         conn.close()
@@ -131,7 +131,7 @@ class ConnectMysql(BaseMysql):
         :return:
         """
 
-        conn = self.SelfConnect()
+        conn = self._SelfConnect()
         cur = conn.cursor()
 
         cur.execute(sql)

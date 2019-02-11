@@ -19,7 +19,7 @@ def prev_active_coroutine(func):
 if __name__ == '__main__':
 
     @prev_active_coroutine
-    def averager2():
+    def average2():
         """calc moving average
         """
         total = 0.0

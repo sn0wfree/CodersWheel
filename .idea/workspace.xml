@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc4f5c4-ed90-4b69-9891-edd60bc8fe4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConnectorWheel/db_core/asnyc_mysql_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectorWheel/db_core/asnyc_mysql_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py" beforeDir="false" afterPath="$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceWheel/CoroutineBoostup.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceWheel/CoroutineBoostup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +31,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/asnyc_mysql_connector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+            <state relative-caret-position="46">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
               <folding>
-                <element signature="e#14#28#0" expanded="true" />
+                <element signature="e#157#176#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServiceWheel/CoroutineBoostup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServiceWheel/Service.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/Redisconnector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-998">
+              <caret line="57" column="20" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="20" />
+              <folding>
+                <element signature="e#15#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,13 +94,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Wheel.py" />
-        <option value="$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py" />
         <option value="$PROJECT_DIR$/ConnectorWheel/db_core/Redisconnector.py" />
         <option value="$PROJECT_DIR$/ConnectorWheel/db_core/__init__.py" />
         <option value="$PROJECT_DIR$/ConnectorWheel/connector.py" />
         <option value="$PROJECT_DIR$/ConnectorWheel/__init__.py" />
         <option value="$PROJECT_DIR$/API.py" />
         <option value="$PROJECT_DIR$/ConnectorWheel/db_core/asnyc_mysql_connector.py" />
+        <option value="$PROJECT_DIR$/ServiceWheel/CoroutineBoostup.py" />
+        <option value="$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py" />
       </list>
     </option>
   </component>
@@ -104,6 +140,11 @@
               <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodersWheel" type="462c0819:PsiDirectoryNode" />
               <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodersWheel" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceWheel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,12 +238,20 @@
       <workItem from="1549338263114" duration="165000" />
       <workItem from="1549799333984" duration="1091000" />
       <workItem from="1549800526154" duration="13311000" />
-      <workItem from="1549854568650" duration="671000" />
+      <workItem from="1549854568650" duration="892000" />
     </task>
+    <task id="LOCAL-00001" summary="alter some place and commit some">
+      <created>1549857871741</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549857871741</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17195000" />
+    <option name="totallyTimeSpent" value="17416000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -217,7 +266,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -243,6 +292,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="alter some place and commit some" />
+    <option name="LAST_COMMIT_MESSAGE" value="alter some place and commit some" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -374,26 +427,6 @@ print(r)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="18" />
-          <folding>
-            <element signature="e#157#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/Redisconnector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="20" />
-          <folding>
-            <element signature="e#15#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -408,16 +441,6 @@ print(r)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/asnyc_mysql_connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
-          <folding>
-            <element signature="e#14#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/-1800615963/_functools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -429,6 +452,43 @@ print(r)</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86273">
           <caret line="3751" column="6" selection-start-line="3751" selection-start-column="6" selection-end-line="3751" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceWheel/CoroutineBoostup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceWheel/Service.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/Redisconnector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-998">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="e#15#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/asnyc_mysql_connector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <folding>
+            <element signature="e#157#176#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

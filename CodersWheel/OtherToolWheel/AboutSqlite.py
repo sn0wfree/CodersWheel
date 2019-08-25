@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
-
-
+import sqlite3
+import pandas as pd
 
 class TransportDB(object):
     def __init__(self):
@@ -8,12 +8,11 @@ class TransportDB(object):
 
     def Transport(self,
                   DB1='RRnew.sqlite',
-                  DB1columns=('UUID','Score','RelatedStock'),
+                  DB1columns=('UUID', 'Score', 'RelatedStock'),
                   DB1table='Industry',
                   DB2='RR.sqlite',
                   DB2table='ScoreRelatedStock'):
-        import sqlite3
-        import pandas as pd
+
         print('Transport Start!')
         with sqlite3.connect(DB1) as conn1:
             df = pd.read_sql('select {} from {}'.format(','.join(DB1columns), DB1table), conn1)

@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from CacheFunctions import LRUDict, LRUDict_UnPickled
+from CacheFunctions import LRUDict, LrudictUnpickled
 # from functools import wraps
 
 
@@ -41,7 +41,7 @@ def LRUCache(capacity=500):
 
 
 def LRUCache_UnPickled(capacity=500):
-    memo = LRUDict_UnPickled(capacity)
+    memo = LrudictUnpickled(capacity)
 
     def Cache(func):
         # @wraps(func)

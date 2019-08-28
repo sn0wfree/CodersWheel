@@ -2,9 +2,10 @@
 from collections import OrderedDict
 from functools import wraps
 import time
+
 try:
     import cPickle as pickle
-except ImportError:  # pragma: no cover
+except ImportError as e:  # pragma: no cover
     import pickle
 
 
@@ -19,15 +20,16 @@ except ImportError:  # pragma: no cover
 # TTLCAche(LRU Cache implementation with per-item time-to-live (TTL) value.)
 
 
-class LRUDict_UnPickled(OrderedDict):
+class LrudictUnpickled(OrderedDict):
     # this is the original dict for cache or LRU function
     # it will set up capacity ,default as 250, and if the length of current dict
     # is large than the value of parameter of capacity, then the old key-value will
-    # be deleted and recevie the one
+    # be deleted and receive the one
+
     __slots__ = ('_capacity')
 
     def __init__(self, capacity=250):
-        super(LRUDict_UnPickled, self).__init__()
+        super(LrudictUnpickled, self).__init__()
         self._capacity = capacity
 
     def __setitem__(self, key, value):
@@ -233,7 +235,9 @@ def Lcache(capacity=250):
                 res = func(*args)
                 memo[args] = res
             return res
+
         return _wrapper
+
     return cache
 
 
@@ -244,4 +248,6 @@ if __name__ == '__main__':
             return n
         else:
             return fib(n - 1) + fib(n - 2)
+
+
     print([fib(i) for i in list(range(31))])

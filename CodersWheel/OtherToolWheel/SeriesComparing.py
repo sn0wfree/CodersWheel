@@ -1,49 +1,8 @@
 # coding=utf8
 import copy
 import pandas as pd
-from HSSearchTool_v002 import SearchTools4HSNewMacroDatabase
 from Needleman_Wunsch import Needleman_Wunsch
-from functools import wraps
-
-import inspect
-try:
-    from inspect import signature
-except ImportError as e:
-    from funcsigs import signature
-
-
-def typeassert(*ty_args, **ty_kwargs):
-    """
-    类型检查(装饰器版本)
-    :param ty_args:
-    :param ty_kwargs:
-    :return:
-    """
-
-    def decorate(func):
-        # If in optimized mode, disable type checking
-        if not __debug__:
-            return func
-
-        # Map function argument names to supplied types
-        sig = signature(func)
-        bound_types = sig.bind_partial(*ty_args, **ty_kwargs).arguments
-
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            bound_values = sig.bind(*args, **kwargs)
-            # Enforce type assertions across supplied arguments
-            for name, value in bound_values.arguments.items():
-                if name in bound_types:
-                    if not isinstance(value, bound_types[name]):
-                        raise TypeError(
-                            'Argument {} must be {}'.format(name, bound_types[name])
-                        )
-            return func(*args, **kwargs)
-
-        return wrapper
-
-    return decorate
+from CodersWheel.OtherToolWheel.typeassert import typeassert
 
 
 class DataPoint(object):
@@ -106,8 +65,9 @@ class CheckSeries(object):
         dp_test_series = DataSett._parse(test_series)
         dp_compare_series = DataSett._parse(compare_series)
         NW_test, NM_compared = Needleman_Wunsch(dp_test_series, dp_compare_series, empty_slot=empty_slot)
-        NW_test_df = DataSett._parse_datapoint(NW_test, value_name=test_name,label_name=test_name+'label')
-        NM_compared_df = DataSett._parse_datapoint(NM_compared, value_name=compare_name,label_name=compare_name+'label')
+        NW_test_df = DataSett._parse_datapoint(NW_test, value_name=test_name, label_name=test_name + 'label')
+        NM_compared_df = DataSett._parse_datapoint(NM_compared, value_name=compare_name,
+                                                   label_name=compare_name + 'label')
 
         wd = pd.concat([NW_test_df, NM_compared_df], axis=1)
         wd['cmp'] = (wd[wd.columns[1]] != wd[wd.columns[3]]) * 1
@@ -144,11 +104,11 @@ class CheckSeries(object):
 
 
 if __name__ == '__main__':
-    hs = SearchTools4HSNewMacroDatabase('hs')
-    testdata = hs.sql2data('select ID,ContractInnerCode from Fut_TradingQuote limit 100')
-    copied_testdata = copy.deepcopy(testdata)
-    CheckSeries._get_coverage(testdata.ID, copied_testdata.ID)
-    wd = CheckSeries._do_NM(testdata.ID, 'testid', copied_testdata[:97].ID, 'comparedid')
+    # hs = SearchTools4HSNewMacroDatabase('hs')
+    # testdata = hs.sql2data('select ID,ContractInnerCode from Fut_TradingQuote limit 100')
+    # copied_testdata = copy.deepcopy(testdata)
+    # CheckSeries._get_coverage(testdata.ID, copied_testdata.ID)
+    # wd = CheckSeries._do_NM(testdata.ID, 'testid', copied_testdata[:97].ID, 'comparedid')
 
     # print(Needleman_Wunsch("AGCACACA", "ACACTA"))
     pass

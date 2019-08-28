@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc4f5c4-ed90-4b69-9891-edd60bc8fe4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/analysis/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Portfolios/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Portfolios/task_test_all.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Portfolios/test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CodersWheel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodersWheel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage_it.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Portfolios/.coveragerc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Portfolios/coverage_it.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Portfolios/git_auto_commit.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_test_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_test_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Bonds.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Bonds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Core.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Information/BondsDataCollector.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Information/BondsDataCollector.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Information/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Information/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Manager/Accelerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Manager/Accelerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Manager/Cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Manager/Cache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Manager/PluginManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Manager/PluginManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/Manager/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/Manager/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Portfolios/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolios/Portfolios/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Portfolios/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="483">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="e#86#128#0" expanded="true" />
               </folding>
@@ -61,25 +47,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Portfolios/task_test_all.py">
+        <entry file="file://$PROJECT_DIR$/../Portfolios/.coveragerc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#86#97#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="69">
+              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task_test_all.py">
+        <entry file="file://$PROJECT_DIR$/../Portfolios/git_auto_commit.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-              <folding>
-                <element signature="e#86#97#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="322">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -94,7 +74,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Portfolios" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev" />
@@ -115,9 +95,13 @@
         <option value="$PROJECT_DIR$/ConnectorWheel/db_core/MysqlConnector.py" />
         <option value="$PROJECT_DIR$/OtherToolWheel/coroutine_prev_active_decor.py" />
         <option value="$PROJECT_DIR$/../Portfolios/Portfolios/__init__.py" />
+        <option value="$PROJECT_DIR$/task_test_all.py" />
         <option value="$PROJECT_DIR$/../Portfolios/setup.py" />
         <option value="$PROJECT_DIR$/../Portfolios/task_test_all.py" />
-        <option value="$PROJECT_DIR$/task_test_all.py" />
+        <option value="$PROJECT_DIR$/../Portfolios/README.md" />
+        <option value="$PROJECT_DIR$/../Portfolios/.coveragerc" />
+        <option value="$PROJECT_DIR$/../Portfolios/coverage_it.sh" />
+        <option value="$PROJECT_DIR$/../Portfolios/git_auto_commit.sh" />
       </list>
     </option>
   </component>
@@ -145,34 +129,6 @@
               <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
               <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="Information" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="Manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodersWheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Portfolios" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -191,6 +147,7 @@
       <recent name="C:\Users\ll\PycharmProjects\Portfolios\Portfolios" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ll\PycharmProjects\CodersWheel" />
       <recent name="C:\Users\ll\PycharmProjects\Portfolios" />
     </key>
   </component>
@@ -283,7 +240,21 @@
       <option name="project" value="LOCAL" />
       <updated>1549857871741</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="alter some place and commit some">
+      <created>1566967875704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566967875704</updated>
+    </task>
+    <task id="LOCAL-00003" summary="alter some place and commit some">
+      <created>1566968294637</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566968294637</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -302,7 +273,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.261424" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.261424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -316,7 +287,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32909784" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143063" side_tool="true" weight="0.24269377" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49642345" weight="0.3278272" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49642345" visible="true" weight="0.32698768" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32909784" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32909784" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -478,14 +449,6 @@ print(r)</expression-string>
     <entry file="file://$PROJECT_DIR$/OtherToolWheel/Tools.py" />
     <entry file="file://$PROJECT_DIR$/OtherToolWheel/Wrappers.py" />
     <entry file="file://$PROJECT_DIR$/ServiceWheel/CoroutineBoostup.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConnectorWheel/db_core/Redisconnector.py" />
     <entry file="file://$PROJECT_DIR$/OtherToolWheel/AboutSqlite.py" />
     <entry file="file://$PROJECT_DIR$/OtherToolWheel/AboutDB.py" />
@@ -509,26 +472,6 @@ print(r)</expression-string>
     <entry file="file://$PROJECT_DIR$/../Portfolios/Portfolios/Manager/Cache.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Portfolios/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#86#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Portfolios/task_test_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#86#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task_test_all.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -536,6 +479,68 @@ print(r)</expression-string>
           <folding>
             <element signature="e#86#97#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Portfolios/task_test_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#86#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Portfolios/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Portfolios/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#86#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage_it.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Portfolios/coverage_it.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Portfolios/.coveragerc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Portfolios/git_auto_commit.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>

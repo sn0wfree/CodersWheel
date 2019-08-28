@@ -6,7 +6,7 @@ import CodersWheel
 
 __Version__ = CodersWheel.__Version__
 __Author__ = CodersWheel.__Author__
-__Description__ = CodersWheel.__Description__
+# __Description__ = CodersWheel.__Description__
 
 
 setup(name='CodersWheel',

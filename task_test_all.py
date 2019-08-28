@@ -13,12 +13,12 @@ import test
 
 
 def load_modules(path):
-	for i in glob.glob(path.rstrip('/')+'/test/*.py'):
+	for f in glob.glob(path.rstrip('/')+'/test/*.py'):
 		if '__init__.py' not in f:
 			name = os.path.splittext(os.path.split(f)[1][0])
 			module_name = name
 			file_path = f 
-			spec = impprtlib.util.spec_from_file_location(module_name,file_path)
+			spec = importlib.util.spec_from_file_location(module_name,file_path)
 			module = importlib.util.module_from_spec(spec)
 			spec.loader.exec_module(module)
 			globals()[module_name] = module

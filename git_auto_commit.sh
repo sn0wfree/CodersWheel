@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-nowdate= `date`
+nowdate=`date`
 python setup.py sdist
 
 #echo ${nowdate}

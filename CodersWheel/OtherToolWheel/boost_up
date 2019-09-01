@@ -1,0 +1,15 @@
+# -*- coding:utf-8 -*-
+def boost_up(func,tasks,core=None,star=True):
+    from multiprocessing import Pool
+    if star:
+            attribute = 'starmap'
+    else:
+            attribute = 'map'    
+    
+    with Pool(core) as p:  
+        res = getattr(p,attribute)(func,tasks)
+    return res
+    
+    
+if __name__=='__main__':
+  pass

@@ -55,4 +55,14 @@ def file_cache(deco_arg_dict):
 
 
 if __name__ == '__main__':
+    @file_cache
+    def test1(a, b):
+        return a + b
+
+
+    @file_cache()
+    def test2(a, b, c):
+        return a + b * c
+
+
     pass

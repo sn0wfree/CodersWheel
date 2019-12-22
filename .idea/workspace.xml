@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdbb8f80-06b7-49d2-83c6-541ed6485b94" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CodersWheel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodersWheel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bdbb8f80-06b7-49d2-83c6-541ed6485b94" name="Default" comment="alter structure and debug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/file_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/file_cache.py" afterDir="false" />
     </list>
@@ -80,8 +77,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529313937882</updated>
-      <workItem from="1576986028797" duration="2447000" />
+      <workItem from="1576986028797" duration="3263000" />
     </task>
+    <task id="LOCAL-00001" summary="alter structure and debug">
+      <created>1576989214361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576989214361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,5 +102,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="alter structure and debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="alter structure and debug" />
   </component>
 </project>

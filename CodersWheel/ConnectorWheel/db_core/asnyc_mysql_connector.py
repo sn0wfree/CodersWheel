@@ -119,14 +119,6 @@ class AsyncMysql(object):
 
 
 if __name__ == '__main__':
-    mysqlpara = dict(host='112.74.189.154',
-                     port=3306,
-                     user='linlu',
-                     password='Imsn0wfree',
-                     db='mysql')
 
-    sqlset = ["SELECT {} as col, 1 as test;".format(i) for i in range(100)]
-
-    result = AsyncMysql.main_query(mysqlpara, sqlset, chunksize=10, to_df=False, merge=False)
 
     print(1)

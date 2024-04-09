@@ -1,9 +1,10 @@
 # coding=utf-8
+from collections import OrderedDict
+
 import datetime
 import hashlib
 import os
 import pickle
-from collections import OrderedDict
 from functools import wraps
 
 __refresh__ = False
@@ -60,12 +61,11 @@ def prepare_args(func, arg, kwargs: dict, granularity: str = 'H', exploit_func_n
 
     key = pickle.dumps([func_name, arg_tuple, kwargs, dt_str])  # get the unique key for the same input
     if exploit_func_name:
-        name = f"{func_name}_{hashlib.sha1(key).hexdigest()}_{dt_str}"  # create cache file name
+        name = f"{func_name}_{hashlib.sha1(key).hexdigest()}_{dt_str}.cache"  # create cache file name
     else:
-        name = hashlib.sha1(key).hexdigest()  # create cache file name
+        name = hashlib.sha1(key).hexdigest() + '.cache'  # create cache file name
     file_path = get_cache_path(enable_cache=enable_cache)
     return file_path, name
-
 
 
 def write(fg, res):
@@ -113,6 +113,7 @@ def file_cache(**deco_arg_dict):
             return _cache(func, args, kwargs, **deco_arg_dict)
 
         return __deco
+
     return _deco
 
 
